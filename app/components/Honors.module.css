@@ -1,0 +1,43 @@
+/* /components/Honors.module.css */
+.honors {
+    background-color: #f2f2f2;
+    padding: 4rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Section title with subtle styling */
+.honors h2 {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Honors text styling */
+.honors p {
+    font-size: 1.4rem;
+    color: rgb(81, 77, 77);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Slight elevation on hover for the entire section */
+.honors:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft hover shadow */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .honors h2 {
+        font-size: 2rem;
+    }
+    
+    .honors p {
+        font-size: 1.2rem;
+    }
+}

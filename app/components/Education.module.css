@@ -1,0 +1,77 @@
+/* /components/Education.module.css */
+.education {
+    background-color: white;
+    color: #f1f1f1;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color:  black;
+}
+
+/* New wrapper for side-by-side layout */
+.educationWrapper {
+    display: flex;
+    justify-content: center; /* Centering items horizontally */
+    align-items: center; /* Centering items vertically */
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+/* Shared styling for both education and certification items */
+.educationItem, .certificationItem {
+    display: flex;
+    align-items: center; /* Align items (logo and text) vertically in the center */
+    gap: 2rem;
+    max-width: 500px; /* Ensures logos and text fit neatly in the space */
+}
+
+.educationItem h3, .certificationText h3 {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.educationItem p, .certificationText p {
+    margin: 0.3rem 0;
+    font-size: 1.2rem;
+}
+
+/* Ensure consistent logo and text vertical alignment */
+.educationText, .certificationText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text block starting from the left */
+    color: black;
+}
+
+.honor {
+    color: black;
+}
+
+/* Logo container for both UGA and DataCamp logos */
+.logoContainer {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Separator is no longer needed between the two sections */
+.separator {
+    display: none;
+}

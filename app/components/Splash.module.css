@@ -1,0 +1,22 @@
+/* /components/Splash.module.css */
+.splash {
+    height: 80vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaeaea;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .splash h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  .splash p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  

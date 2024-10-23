@@ -1,0 +1,83 @@
+/* /components/Experience.module.css */
+.experience {
+    background-color: #f2f2f2;
+    padding: 4rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section title with subtle styling */
+.experience h2 {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Job card styling for a clean and modern look */
+.job {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Job card hover effect with minimal shadow */
+.job:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Job title with modern typography */
+.job h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Job list with subtle bullets and spacing */
+.job ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.job ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.job p {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .experience h2 {
+        font-size: 2rem;
+    }
+
+    .job {
+        padding: 1.5rem;
+    }
+
+    .job h3 {
+        font-size: 1.4rem;
+    }
+
+    .job ul {
+        padding-left: 1rem;
+    }
+}
