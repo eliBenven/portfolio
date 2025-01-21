@@ -1,36 +1,84 @@
-/* /components/Skills.module.css */
+/* Skills section */
 .skills {
-    background-color: #fff;
-    color: #f1f1f1;
-    padding: 4rem;
-    text-align: center;
-  }
-  
+  background-color: #1e1e1e; /* Dark background for contrast */
+  color: #f1f1f1;
+  padding: 3rem 2rem; /* Smaller padding for tighter design */
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  margin-top: 20px;
+  border-radius: 13px;
+}
+
+/* Section title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Skill list - responsive grid */
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tighter grid */
+  gap: 1rem; /* Smaller gap for compact look */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual skill card styling */
+.skill {
+  background-color: #2a2a2a; /* Slightly lighter background for skill cards */
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem; /* Smaller font for better compact design */
+  color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    color: #333;
+      font-size: 1.8rem;
   }
-  
-  .skillList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
+
   .skill {
-    background-color: #2a2a2a;
-    padding: 1.5rem;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 0.9rem; /* Smaller font size for mobile */
+      transition: none; /* Disable transition on mobile */
   }
-  
+
+  /* Remove hover effects on mobile */
   .skill:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      transform: none;
+      box-shadow: none;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.6rem;
+  }
+
+  .skill {
+      font-size: 0.85rem; /* Adjusted further for smaller screens */
+      transition: none;
+  }
+
+  .skill:hover {
+      transform: none;
+      box-shadow: none;
+
+  }
+}
+

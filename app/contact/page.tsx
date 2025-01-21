@@ -1,8 +1,8 @@
-// /app/education/page.tsx
-import Education from '../components/Education';
+// /app/contact/page.tsx
+import Contact from '../components/Contact';
 
 export const metadata = {
-  title: 'Eli Benveniste | Data Analyst & Developer',
+  title: 'Contact Eli Benveniste | Data Analyst & Developer',
   description: 'Welcome to Eli Benveniste\'s professional portfolio. Data Analyst & Developer with expertise in data visualization, web development, and software engineering.',
   openGraph: {
     type: 'website',
@@ -29,10 +29,10 @@ export const metadata = {
   },
 };
 
-export default function EducationPage() {
+export default function ContactPage() {
   return (
     <>
-      <Education />
+      <Contact />
     </>
   );
 }

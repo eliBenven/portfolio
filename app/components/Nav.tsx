@@ -1,18 +1,28 @@
-// /components/Nav.tsx
+"use client"; // Enables client-side functionality
+
+import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Nav.module.css';
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className={styles.nav}>
-      <ul className={styles.navList}>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/education">Education</Link></li>
-        <li><Link href="/experience">Experience</Link></li>
-        <li><Link href="/skills">Skills</Link></li>
-        <li><Link href="/projects">Projects</Link></li>
-        <li><Link href="/honors">Honors</Link></li>
-      </ul>
+      <div className={styles.navContainer}>
+        <Link href="/" className={styles.logo}>
+        Eli Benveniste
+        </Link>
+
+        {/* Navbar Links with Contact Icon */}
+        <ul className={`${styles.navList} ${isOpen ? styles.showMenu : ''}`}>
+          <li>
+            <Link href="/contact" onClick={() => setIsOpen(false)}>
+              <img src="/images/contact.png" alt="Contact Icon" className={styles.icon} />
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

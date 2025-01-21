@@ -1,32 +1,82 @@
-/* /components/Nav.module.css */
+/* General Navbar Styling */
 .nav {
-    background-color: #141414;
-    padding: 1rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo {
+  color: white;
+  font-size: 1.65rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #b0b0b0; /* Subtle hover effect for the logo */
+}
+
+/* Navbar Links with Icon */
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navList li {
+  list-style: none;
+}
+
+.navList li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Styling for the contact icon */
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%; /* Circular icon background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #b0b0b0;; /* Subtle change for hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navContainer {
+    padding: 0 1rem;
   }
-  
-  .navList {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
+
+  .logo {
+    font-size: 1.6rem;
   }
-  
-  .navList li a {
-    color: #f1f1f1;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+
+  .icon {
+    width: 26px;
+    height: 26px;
   }
-  
-  .navList li a:hover {
-    background-color: #2a2a2a;
-  }
-  
+}

@@ -1,77 +1,183 @@
-/* /components/Education.module.css */
+/* General Styling for Education Section */
 .education {
-    background-color: white;
+    background-color: #1e1e1e;
     color: #f1f1f1;
-    padding: 4rem;
+    padding: 1.5rem;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
+/* Title Styling */
 .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     font-weight: 700;
-    color:  black;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 0;
 }
 
-/* New wrapper for side-by-side layout */
+/* Wrapper for side-by-side layout */
 .educationWrapper {
     display: flex;
-    justify-content: center; /* Centering items horizontally */
-    align-items: center; /* Centering items vertically */
-    gap: 4rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.75rem;
     flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Shared styling for both education and certification items */
+/* Shared styling for education and certification items */
 .educationItem, .certificationItem {
     display: flex;
-    align-items: center; /* Align items (logo and text) vertically in the center */
-    gap: 2rem;
-    max-width: 500px; /* Ensures logos and text fit neatly in the space */
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #292929;
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Subtle hover effect for desktop */
+.educationItem:hover, .certificationItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Text content */
 .educationItem h3, .certificationText h3 {
-    font-size: 1.8rem;
-    color: black;
+    font-size: 1.7rem;
+    color: #f9f9f9;
+    margin-bottom: 0.5rem;
+    margin-top: 0px;
 }
 
 .educationItem p, .certificationText p {
-    margin: 0.3rem 0;
-    font-size: 1.2rem;
+    margin: 0.25rem 0;
+    font-size: 1.1rem;
+    color: #cccccc;
 }
 
-/* Ensure consistent logo and text vertical alignment */
+/* Align text blocks */
 .educationText, .certificationText {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align the text block starting from the left */
-    color: black;
+    align-items: flex-start;
+    gap: 0.5rem;
+    
 }
 
+/* Highlight for honors */
 .honor {
-    color: black;
+    color: #ffd700;
+    font-weight: 500;
 }
 
-/* Logo container for both UGA and DataCamp logos */
+/* Logo container for UGA and DataCamp logos */
 .logoContainer {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Logo image */
 .logo {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: contain;
 }
 
-/* Separator is no longer needed between the two sections */
-.separator {
-    display: none;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .educationWrapper {
+        gap: 1.5rem;
+    }
+
+    .educationItem, .certificationItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.2rem;
+        box-shadow: none; /* Remove shadow on smaller screens for simplicity */
+        transition: none; /* Disable hover effect */
+    }
+
+    .educationItem h3, .certificationText h3 {
+        font-size: 1.6rem;
+    }
+
+    .educationItem p, .certificationText p {
+        font-size: 1rem;
+    }
+
+    .logoContainer {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education {
+        padding: 2rem 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .educationWrapper {
+        gap: 1rem;
+    }
+
+    .educationItem h3, .certificationText h3 {
+        font-size: 1.5rem;
+    }
+
+    .educationItem p, .certificationText p {
+        font-size: 0.95rem;
+    }
+
+    .logoContainer {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .educationItem:hover {
+        transform: none;
+    }
+
+    .certificationItem:hover {
+        transform: none;
+    }
+    
 }

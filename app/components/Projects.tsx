@@ -1,8 +1,6 @@
 // /components/Projects.tsx
 import styles from './Projects.module.css';
 
-const OrgChartCensored = require('./OrgChartCensored.png')
-
 const projects = [
     {
         title: 'AI-Powered Auto Trading Bot',
@@ -12,22 +10,17 @@ const projects = [
       {
         title: 'Help Desk Automation with AI',
         description: 'Implemented AI-driven automation for the help desk, streamlining ticket management and automating common support tasks to improve efficiency and response times.',
-        image: '/images/helpDeskAutomation.avif', // Placeholder image path
+        image: '/images/helpDeskAutomation.jpg', // Placeholder image path
       },    
   {
     title: 'Organizational Hierarchy Report (PowerBI)',
     description: 'Developed a report visualizing organizational hierarchies using PowerBI, leveraging complex datasets.',
-    image: '/images/OrgChartCensored.png', // Placeholder image path
+    image: '/images/OrgChartCensored.jpeg', // Placeholder image path
   },
   {
     title: 'Security Audits (SOC2, HIPAA)',
     description: 'Conducted security audits ensuring compliance with SOC2 and HIPAA regulations.',
     image: '/images/soc2hipaa.png', // Placeholder image path
-  },
-  {
-    title: 'Cinema Booking Website',
-    description: 'Built a cinema booking website simulation for school, allowing users to book tickets online.',
-    image: '/images/cinema-booking.png', // Placeholder image path
   },
   {
     title: 'Custom Linux Command System',

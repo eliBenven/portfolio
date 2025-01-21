@@ -14,7 +14,7 @@ const Education = () => {
           </div>
           <div className={styles.educationText}>
             <h3>B.S. Computer Science</h3>
-            <p>University of Georgia, Athens, GA</p>
+            <p>University of Georgia | Athens, GA</p>
             <p>Aug 2021 – Dec 2024</p>
             <p className={styles.honor}>Spring 2024 Presidential Scholar (4.0)</p>
           </div>

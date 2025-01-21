@@ -1,0 +1,82 @@
+/* General Contact Section Styling */
+.contact {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Heading styling */
+.contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Image styling */
+.contact img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contact button styling (email and LinkedIn) */
+.contactButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid white; /* Professional border */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust image size for smaller screens */
+    .contact img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Further adjust image size for very small screens */
+    .contact img {
+        width: 100px;
+        height: 100px;
+    }
+}
